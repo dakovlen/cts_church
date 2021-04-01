@@ -1,11 +1,11 @@
-import '../styles/main.scss';
+import '../styles/style.scss';
 import NextNprogress from 'nextjs-progressbar';
 
 export default function MyApp({ Component, pageProps }) {
     return(
         <>
             <NextNprogress
-                color="yellow"
+                color="#0f8660"
                 startPosition={0.3}
                 stopDelayMs={200}
                 height={3}

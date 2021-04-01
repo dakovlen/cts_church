@@ -1,0 +1,73 @@
+html,
+body {
+  font-family: $text-font;
+  font-size: 10px;
+  text-align: left;
+  color: $text;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: $transition;
+  color: $text;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  word-wrap: break-word;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: $text;
+}
+
+.section {
+  padding: 10rem 0;
+}
+
+.bg-light {
+  background: $bg-light;
+}
+
+.text-site {
+  color: $color-site;
+}
