@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   transition: $transition;
 
   &__item {
@@ -26,12 +26,12 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: $color-site;
+      background: $colorSite;
       transition: $transition;
     }
 
     &:hover {
-      color: $color-site;
+      color: $colorSite;
       transition: $transition;
 
       &:before {
@@ -42,8 +42,6 @@
   }
 
 }
-
-
 
 .menu-icon-box {
   display: none;
@@ -92,8 +90,6 @@
 }
 
 .menu-box {
-
-
   &.open {
 
     .menu {

@@ -1,15 +1,20 @@
 html,
 body {
   font-family: $text-font;
-  font-size: 16px;
+  font-size: 10px;
   text-align: left;
   color: $text;
   -webkit-font-smoothing: antialiased;
 }
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
 
-body {
-  padding-top: 99px;
-
+main {
+  flex: 1 0 auto;
 }
 
 * {
@@ -36,6 +41,7 @@ img {
 }
 
 p {
+  font-size: 1.6rem;
   word-wrap: break-word;
 }
 
@@ -51,12 +57,7 @@ button {
 
 textarea {
   resize: none;
-  min-height: 160px;
-  padding: 20px 20px 20px 15px;
-
-  @include mobile {
-    min-height: 120px;
-  }
+  padding: 10px;
 }
 
 .container {
@@ -68,22 +69,6 @@ textarea {
   }
 }
 
-.h2 {
-  font-size: 45px;
-  text-transform: uppercase;
-  color: $text;
-  margin-bottom: 50px;
-}
-
 .section {
   padding: 100px 0;
-
-}
-
-.bg-light {
-  background: $bg-light;
-}
-
-.text-site {
-  color: $color-site;
 }

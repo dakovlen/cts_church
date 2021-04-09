@@ -9,10 +9,9 @@ export default function Home() {
         <Head>
             <title>Title</title>
         </Head>
-      <h1>Hello!</h1>
-        <ul>
-
-        </ul>
+      <div className="container">
+          <h1>Hello!</h1>
+      </div>
     </MainLayout>
   )
 }
