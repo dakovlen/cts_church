@@ -5,7 +5,7 @@ export default function Footer() {
         <>
             <footer className="footer">
                 <nav className="footer-content">
-                    <Link  href="./">
+                    <Link  href="/">
                         <a className="logo">logo</a>
                     </Link>
                     <ul className="menu">

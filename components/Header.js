@@ -5,7 +5,7 @@ export default function Header() {
         <>
             <header className="header">
                 <nav className="header-content">
-                    <Link  href="./">
+                    <Link  href="/">
                         <a className="logo">logo</a>
                     </Link>
                     <ul className="menu">
