@@ -6,7 +6,9 @@ export default function Header() {
             <header className="header">
                 <nav className="header-content">
                     <Link  href="/">
-                        <a className="logo">logo</a>
+                        <a className="logo">
+                            <img src="/images/logo_horizontal_color_white.png" alt="Logo"/>
+                        </a>
                     </Link>
                     <ul className="menu">
                         <li className="menu__item">

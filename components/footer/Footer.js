@@ -7,7 +7,9 @@ export default function Footer() {
             <footer className="footer">
                 <nav className="footer-content">
                     <Link  href="/">
-                        <a className="logo">logo</a>
+                        <a className="logo">
+                            <img src="/images/logo_horizontal_white.png" alt="Logo Bottom"/>
+                        </a>
                     </Link>
                     <ul className="menu">
                         <li className="menu__item">

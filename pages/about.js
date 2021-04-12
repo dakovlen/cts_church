@@ -2,7 +2,7 @@ import MainLayout from "../components/MainLayout";
 
 export default function About() {
     return(
-        <MainLayout>
+        <MainLayout title={"About Page"}>
 
             <div className="container">
                 <h1>About page</h1>

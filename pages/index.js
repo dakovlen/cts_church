@@ -5,10 +5,7 @@ import MainLayout from "../components/MainLayout";
 
 export default function Home() {
   return (
-    <MainLayout>
-        <Head>
-            <title>Title</title>
-        </Head>
+    <MainLayout title={'Home Page'}>
       <div className="container">
           <h1>Hello!</h1>
       </div>
