@@ -1,6 +1,10 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function Header() {
+    let router = useRouter();
+
+
     return(
         <>
             <header className="header">
@@ -24,9 +28,15 @@ export default function Header() {
                     </ul>
 
                     <div className="lang">
-                        <div className="lang__item">Ru</div>
-                        <div className="lang__item">UA</div>
-                        <div className="lang__item">En</div>
+                        {router.locales.map((locale) => (
+                            <div className="lang__item"
+                                 key={locale}>
+                                <Link href={router.asPath}
+                                      locale={locale}>
+                                    <a className="lang__link">{locale}</a>
+                                </Link>
+                            </div>
+                        ))}
                     </div>
                 </nav>
             </header>
