@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Menu from '../../components/header/Menu';
 
 export default function Header() {
     let router = useRouter();
@@ -14,19 +15,8 @@ export default function Header() {
                             <img src="/images/logo_horizontal_color_white.png" alt="Logo"/>
                         </a>
                     </Link>
-                    <ul className="menu">
-                        <li className="menu__item">
-                            <Link href='/about'>
-                                <a className="menu__link">About</a>
-                            </Link>
-                        </li>
-                        <li className="menu__item">
-                            <Link href='/contact'>
-                                <a className="menu__link">Contact</a>
-                            </Link>
-                        </li>
-                    </ul>
 
+                    <Menu/>
                     <div className="lang">
                         {router.locales.map((locale) => (
                             <div className="lang__item"

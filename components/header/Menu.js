@@ -1,0 +1,23 @@
+import Link from "next/link";
+import useTranslation from "next-translate/useTranslation";
+
+export default function Menu() {
+    let { t } = useTranslation();
+
+    return (
+        <>
+            <ul className="menu">
+                <li className="menu__item">
+                    <Link href='/about'>
+                        <a className="menu__link">{t('common:menu.about')}</a>
+                    </Link>
+                </li>
+                <li className="menu__item">
+                    <Link href='/contact'>
+                        <a className="menu__link">{t('common:menu.contact')}</a>
+                    </Link>
+                </li>
+            </ul>
+        </>
+    )
+}

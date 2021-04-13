@@ -1,8 +1,9 @@
 module.exports = {
     "locales": ["en", "ru", "ua"],
-    "defaultLocale": "en",
+    "defaultLocale": "ua",
     "pages": {
         "*": ["common"],
-        "/about": ["about"]
+        "/about": ["about"],
+        "/contact": ["contact"]
     }
 }
