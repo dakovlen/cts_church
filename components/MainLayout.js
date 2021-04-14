@@ -7,6 +7,7 @@ export default function MainLayout({ children, title="Base Title" }) {
         <>
             <Head>
                 <title>{title} | Page</title>
+                <link rel="icon" href="/images/favicon.png"/>
             </Head>
             <Header/>
 
