@@ -1,11 +1,21 @@
 .header-content {
   width:  100%;
   z-index: 100;
-  display: grid;
-  grid-template-columns: 20% 60% 20%;
+  display: flex;
   padding: 16px 50px;
   align-items: center;
+  justify-content: space-between;
   background: $darkBg;
+
+  @include desktop {
+    padding: 10px 20px;
+  }
+
+  .menu__link {
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
 }
 
 .logo {
@@ -21,7 +31,7 @@
 .lang {
   display: flex;
   align-items: center;
-
+  justify-content: center;
 
   &__item {
     margin-left: 15px;

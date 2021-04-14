@@ -1,16 +1,49 @@
+.menu-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @include tablet {
+    position: fixed;
+    flex-direction: column;
+    top: -100%;
+    left: 0;
+    background: $colorSite;
+    height: calc(100vh - 80px);
+    padding: 3rem 1.6rem;
+    overflow-y: auto;
+    z-index: 3;
+    transition: $transition;
+  }
+}
+
 .menu {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   transition: $transition;
 
+  @include tablet {
+    flex-direction: column;
+  }
+
   &__item {
     margin-left: 25px;
+
+    @include tablet {
+      margin: 0 0 4rem 0;
+    }
 
     &:first-child {
       margin-left: 0;
     }
 
+    &:last-child {
+      @include tablet {
+        margin: 0;
+      }
+    }
   }
 
   &__link {
@@ -40,77 +73,65 @@
       }
     }
   }
-
-}
-
-.menu-icon-box {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-
-
-  &:hover {
-    .menu-icon {
-      &:before,
-      &:after {
-        width: 25px;
-        transition: $transition;
-      }
-    }
-  }
 }
 
 .menu-icon {
+  display: none;
   position: relative;
+  z-index: 30;
+  height: 25px;
   width: 25px;
-  height: 2px;
-  background: $white;
-
+  border-radius: 3px;
+  background: transparent;
+  
+  @include tablet {
+    display: block;
+  }
+  
   &:before,
   &:after {
-    content: '';
-    height: 2px;
-    width: 20px;
-    position: absolute;
+
+    backface-visibility: hidden;
+    content: "";
+    height: 3px;
     left: 0;
+    transition: 0.75s;
+    width: 25px;
+    border-radius: 5px;
     background: $white;
-    transition: $transition;
   }
 
   &:before {
-    top: -5px;
+    box-shadow: $white 0 7.5px 0 0;
+    position: absolute;
+    top: 10px;
   }
-
 
   &:after {
-    bottom: -5px;
+    position: absolute;
+    top: 25px;
   }
+
 }
 
-.menu-box {
-  &.open {
+.input-checkbox {
+  opacity: 0;
+  display: none;
 
-    .menu {
-      right: 0;
-      transition: $transition;
+  &:checked {
+    & ~ .menu-icon:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 49%;
+      transform: rotate(225deg);
     }
 
-    .menu-icon {
-      width: 20px;
-      transform: rotate(135deg);
-      &:after{
-        width: 0;
-        transition: $transition;
-      }
+    & ~ .menu-icon:after {
+      top: 49%;
+      transform: rotate(315deg);
+    }
 
-      &:before {
-        width: 20px;
-        top: 0;
-        transition: $transition;
-        transform: rotate(-90deg);
-      }
+    & ~ .menu-box {
+      top: 80px;
     }
   }
 }
