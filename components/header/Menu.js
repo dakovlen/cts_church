@@ -1,4 +1,4 @@
-import Link from "../../components/link";
+import Link from "../../components/Link";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Menu() {
