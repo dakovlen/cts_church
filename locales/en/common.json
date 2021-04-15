@@ -2,6 +2,7 @@
   "greeting": "Hello world",
 
   "menu": {
+    "home": "Home",
     "about": "About",
     "contact": "Contact"
   }

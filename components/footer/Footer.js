@@ -17,14 +17,20 @@ export default function Footer() {
 
                     <ul className="social">
                         <li className="social__item">
-                            <a href="#" className="social__link">
+                            <a href="https://www.facebook.com/church.cts"
+                               className="social__link"
+                                target="_blank"
+                            >
                                 <svg className="social__icon">
                                     <use xlinkHref="#icon-fb" className="social__icon"></use>
                                 </svg>
                             </a>
                         </li>
                         <li className="social__item">
-                            <a href="#" className="social__link">
+                            <a href="https://www.instagram.com/cts_church/"
+                               className="social__link"
+                               target="_blank"
+                            >
                                 <svg className="social__icon">
                                     <use xlinkHref="#icon-instagram" className="social__icon"></use>
                                 </svg>
@@ -39,7 +45,10 @@ export default function Footer() {
                         {/*</li>*/}
 
                         <li className="social__item">
-                            <a href="#" className="social__link">
+                            <a href="https://www.youtube.com/channel/UCsdwUf3UHm17hR2qtwzQOrg"
+                               className="social__link"
+                               target="_blank"
+                            >
                                 <svg className="social__icon">
                                     <use xlinkHref="#icon-youtube" className="social__icon"></use>
                                 </svg>

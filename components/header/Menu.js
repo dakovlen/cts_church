@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "../../components/link";
 import useTranslation from "next-translate/useTranslation";
 
 export default function Menu() {
@@ -7,6 +7,11 @@ export default function Menu() {
     return (
         <>
             <ul className="menu">
+                <li className="menu__item">
+                    <Link href='/'>
+                        <a className="menu__link">{t('common:menu.home')}</a>
+                    </Link>
+                </li>
                 <li className="menu__item">
                     <Link href='/about'>
                         <a className="menu__link">{t('common:menu.about')}</a>
