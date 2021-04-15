@@ -36,13 +36,6 @@ export default function Footer() {
                                 </svg>
                             </a>
                         </li>
-                        {/*<li className="social__item">*/}
-                        {/*    <a href="#" className="social__link">*/}
-                        {/*        <svg className="social__icon">*/}
-                        {/*            <use xlinkHref="#icon-email" className="social__icon"></use>*/}
-                        {/*        </svg>*/}
-                        {/*    </a>*/}
-                        {/*</li>*/}
 
                         <li className="social__item">
                             <a href="https://www.youtube.com/channel/UCsdwUf3UHm17hR2qtwzQOrg"
