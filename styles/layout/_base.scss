@@ -6,7 +6,8 @@ body {
   color: $text;
   -webkit-font-smoothing: antialiased;
 }
-#__next {
+#__next,
+.app {
   display: flex;
   flex-direction: column;
   height: 100%;
