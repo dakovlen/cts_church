@@ -1,10 +1,13 @@
 import Link from "next/link";
 import IconContainer from "./IconContainer";
 import Menu from "../../components/header/Menu";
+import Map from "../../components/Map";
 
 export default function Footer() {
     return(
         <>
+            <Map/>
+
             <footer className="footer">
                 <nav className="footer-content">
                     <Link  href="/">

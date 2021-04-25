@@ -5,6 +5,10 @@ body {
   text-align: left;
   color: $text;
   -webkit-font-smoothing: antialiased;
+
+  @include tablet {
+    font-size: 5px;
+  }
 }
 #__next,
 .app {
@@ -71,7 +75,7 @@ textarea {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 9rem 0;
 }
 
 .svg-container {

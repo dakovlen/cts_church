@@ -8,8 +8,8 @@
     flex-direction: column;
     top: -100%;
     left: 0;
-    background: $colorSite;
-    height: calc(100vh - 80px);
+    background: $darkBg;
+    height: calc(100vh - 79px);
     padding: 3rem 1.6rem;
     overflow-y: auto;
     z-index: 3;
@@ -90,7 +90,6 @@
   
   &:before,
   &:after {
-
     backface-visibility: hidden;
     content: "";
     height: 3px;
@@ -131,7 +130,7 @@
     }
 
     & ~ .menu-box {
-      top: 80px;
+      top: 79px;
     }
   }
 }
