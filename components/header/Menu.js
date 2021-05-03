@@ -18,6 +18,11 @@ export default function Menu() {
                     </Link>
                 </li>
                 <li className="menu__item">
+                    <Link href='/ministry'>
+                        <a className="menu__link">{t('common:menu.ministry')}</a>
+                    </Link>
+                </li>
+                <li className="menu__item">
                     <Link href='/contact'>
                         <a className="menu__link">{t('common:menu.contact')}</a>
                     </Link>
