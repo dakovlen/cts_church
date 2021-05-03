@@ -52,6 +52,9 @@
 //VIDEO SECTION END
 
 //ministry SECTION START
+.ministry-section {
+  padding-bottom: 0;
+}
 
 .ministry-home-box {
   display: flex;
@@ -63,8 +66,7 @@
   position: relative;
   padding: 4rem 2.5rem;
   text-align: center;
-
-
+  width: 25%;
   @include desktop {
     width: 50%;
   }

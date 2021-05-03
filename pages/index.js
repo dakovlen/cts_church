@@ -56,16 +56,6 @@ export default function Home() {
             </div>
         </section>
 
-        {/*<section className="section section-video">*/}
-        {/*    <div className="container">*/}
-        {/*        <h2>Трансляции</h2>*/}
-        {/*        <iframe width="100%" height="515" src="https://www.youtube.com/embed/ka4wErxS_Yc"*/}
-        {/*                title="YouTube video player" frameBorder="0"*/}
-        {/*                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
-        {/*                allowFullScreen></iframe>*/}
-        {/*    </div>*/}
-        {/*</section>*/}
-
         <section className="section ministry-section">
             <h2>Служения</h2>
             <div className="ministry-home-box">
@@ -99,6 +89,19 @@ export default function Home() {
             </div>
         </section>
 
+        <section className="section section-video">
+            <div className="container">
+                <h2>Трансляции</h2>
+                <iframe width="100%" height="515" src="https://www.youtube.com/embed/ka4wErxS_Yc"
+                        title="YouTube video player" frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen></iframe>
+            </div>
+        </section>
+        {/*<iframe*/}
+        {/*    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchurch.cts&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=795374611268110"*/}
+        {/*    width="100%" height="500" scrolling="no" frameBorder="0"*/}
+        {/*    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>*/}
     </MainLayout>
   )
 }
