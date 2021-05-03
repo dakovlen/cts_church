@@ -23,10 +23,17 @@
   &__img {
     margin-right: 4rem;
 
+    @include desktop {
+      margin: 0;
+    }
     img {
       @include desktop {
         max-width: 600px;
         margin-bottom: 3rem;
+      }
+
+      @include tablet {
+        max-width: 100%;
       }
     }
   }
