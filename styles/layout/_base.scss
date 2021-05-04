@@ -71,8 +71,15 @@ ul {
   margin: 0;
 }
 
+input,
+textarea {
+  padding: 10px;
+  font-size: 1.6rem;
+}
+
 button {
   cursor: pointer;
+  border: 0;
 }
 
 textarea {
