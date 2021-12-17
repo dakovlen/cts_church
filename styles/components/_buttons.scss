@@ -1,0 +1,13 @@
+.btn-main {
+  display: inline-block;
+  background: linear-gradient(to right top, #52638a, #256f94, #007990, #00817d, #0f8660);
+  padding: 1.5rem 3rem;
+  color: $white;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  transition: $transition;
+
+  &:hover {
+    background: linear-gradient(to left bottom, #52638a, #256f94, #007990, #00817d, #0f8660);
+  }
+}

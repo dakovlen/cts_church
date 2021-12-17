@@ -1,0 +1,137 @@
+.menu-box {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  @include tablet {
+    position: fixed;
+    flex-direction: column;
+    top: -100%;
+    left: 0;
+    background: $darkBg;
+    height: calc(100vh - 79px);
+    padding: 3rem 1.6rem;
+    overflow-y: auto;
+    z-index: 3;
+    transition: $transition;
+  }
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: $transition;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  &__item {
+    margin-left: 25px;
+
+    @include tablet {
+      margin: 0 0 4rem 0;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    font-size: 18px;
+    color: $white;
+    padding: 20px 0;
+    letter-spacing: -0.4px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 16px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $colorSite;
+      transition: $transition;
+    }
+
+    &:hover, &.active {
+      color: $colorSite;
+      transition: $transition;
+
+      &:before {
+        width: 100%;
+        transition: $transition;
+      }
+    }
+  }
+}
+
+.menu-icon {
+  display: none;
+  position: relative;
+  z-index: 30;
+  height: 25px;
+  width: 25px;
+  border-radius: 3px;
+  background: transparent;
+  
+  @include tablet {
+    display: block;
+  }
+  
+  &:before,
+  &:after {
+    backface-visibility: hidden;
+    content: "";
+    height: 3px;
+    left: 0;
+    transition: 0.75s;
+    width: 25px;
+    border-radius: 5px;
+    background: $white;
+  }
+
+  &:before {
+    box-shadow: $white 0 7.5px 0 0;
+    position: absolute;
+    top: 10px;
+  }
+
+  &:after {
+    position: absolute;
+    top: 25px;
+  }
+
+}
+
+.input-checkbox {
+  opacity: 0;
+  display: none;
+
+  &:checked {
+    & ~ .menu-icon:before {
+      box-shadow: transparent 0 0 0 0;
+      top: 49%;
+      transform: rotate(225deg);
+    }
+
+    & ~ .menu-icon:after {
+      top: 49%;
+      transform: rotate(315deg);
+    }
+
+    & ~ .menu-box {
+      top: 79px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.header-content {
+  width:  100%;
+  z-index: 100;
+  display: flex;
+  padding: 16px 50px;
+  align-items: center;
+  justify-content: space-between;
+  background: $darkBg;
+
+  @include desktop {
+    padding: 10px 20px;
+  }
+
+  .menu__link {
+    @include tablet {
+      font-size: 3rem;
+    }
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  color: $white;
+
+  img {
+    min-width: 180px;
+    width: 180px;
+  }
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__item {
+    margin-left: 15px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &__link {
+    color: $white;
+    font-size: 1.8rem;
+  }
+}
